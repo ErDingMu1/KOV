@@ -657,10 +657,6 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
 <p>活动最终解释权归 KOV R&amp;B Bar 所有</p>
 </div>
 <!-- Download Button -->
-<button class="mt-8 px-6 py-2 bg-gray-900 border border-gray-700 hover:border-red-500 hover:text-red-500 text-gray-500 text-xs rounded transition-all duration-300 flex items-center gap-2 group" onclick="downloadHTML()">
-<span class="material-symbols-outlined text-sm group-hover:animate-bounce">download</span>
-            下载网页源码 (HTML)
-        </button>
 </div>
 </footer>
 <script>
@@ -714,26 +710,7 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
         }, 1000);
     }
 
-    function downloadHTML() {
-        // Get the full HTML content of the page
-        const htmlContent = document.documentElement.outerHTML;
-        
-        // Create a Blob from the HTML content
-        const blob = new Blob([htmlContent], { type: 'text/html' });
-        
-        // Create a download link
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'kov_bar_event.html'; // Set the filename
-        
-        // Append to body, click, and remove
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        
-        // Clean up
-        URL.revokeObjectURL(a.href);
-    }
+    
 </script>
 <!--
     "/gen?prompt=bottles+of+colorful+soda+alcohol+drinks+on+ice+dark+bar+lighting&aspect=1:1"
